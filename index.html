@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular App</title>
+    <link rel="stylesheet" href="styles/style.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body ng-app="routingModule">
+    <header>
+      <nav>
+        <div>
+          <a href="#/view1">Dog</a>
+          <a href="#/view2">Cat</a>
+          <a href="#/view3">Bird</a>
+          <a href="#/view4">Tiger</a>
+          <a href="#/view5">Whale</a>
+
+        </div>
+      </nav>
+    </header>
+
+    <ng-view>
+
+    </ng-view>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="controller.js" charset="utf-8"></script>
+  </body>
+</html>
